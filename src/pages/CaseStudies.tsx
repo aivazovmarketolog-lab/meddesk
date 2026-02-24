@@ -55,7 +55,7 @@ const CaseStudiesPage = () => {
 
         {filtered.length === 0 && (
           <div className="text-center py-16 text-muted-foreground">
-            No case studies found in this category yet.
+            В этой категории кейсы пока не найдены.
           </div>
         )}
       </section>

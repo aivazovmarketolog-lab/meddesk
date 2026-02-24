@@ -9,9 +9,9 @@ const CaseStudyDetail = () => {
 
   if (!study) {
     return (
-      <main className="pt-24 pb-16 container mx-auto px-4 lg:px-8 text-center">
-        <h1 className="font-display text-3xl font-bold mb-4">Case Study Not Found</h1>
-        <Link to="/cases" className="text-primary font-medium">← Back to cases</Link>
+    <main className="pt-24 pb-16 container mx-auto px-4 lg:px-8 text-center">
+        <h1 className="font-display text-3xl font-bold mb-4">Кейс не найден</h1>
+        <Link to="/cases" className="text-primary font-medium">← Назад к кейсам</Link>
       </main>
     );
   }

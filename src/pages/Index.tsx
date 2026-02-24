@@ -34,14 +34,14 @@ const faqs = [
   { q: "С какими нишами вы работаете?", a: "Работаем с медициной, ресторанами, ритейлом, транспортом, блогерами, электроникой и цветочными магазинами — и при этом легко адаптируемся под любую нишу." },
   { q: "Как вы измеряете эффективность?", a: "Отслеживаем KPI, важные именно для вашего бизнеса: лиды, продажи, вовлеченность, рост аудитории, ROAS и дополнительные метрики под ваши цели." },
   { q: "Можно ли собрать индивидуальный пакет?", a: "Да. В “Подборе пакета” вы выбираете нишу, цели, инструменты и уровень поддержки — и получаете персональный план." },
-  { q: "What's your minimum contract length?", a: "We recommend a minimum of 3 months to see meaningful results, but we offer month-to-month options for established clients." },
+  { q: "Какова минимальная длительность контракта?", a: "Мы рекомендуем минимальный срок контракта в 3 месяца для достижения значимых результатов, но для существующих клиентов доступны условия помесячной оплаты." },
 ];
 
 const whyUs = [
-  { title: "Industry Expertise", desc: "Deep knowledge across 7+ verticals with proven playbooks." },
-  { title: "Data-Driven", desc: "Every decision backed by analytics, every campaign optimized for ROI." },
-  { title: "Transparent Reporting", desc: "Clear dashboards and regular reports — you always know what's happening." },
-  { title: "Dedicated Team", desc: "A senior strategist and creative team assigned to your account." },
+  { title: "Экспертиза отрасли", desc: "Глубокие знания в более чем 7 вертикалях и проверенные практические методики." },
+  { title: "Основано на данных", desc: "Каждое решение поддержано аналитикой, каждая кампания оптимизирована для ROI (окупаемость инвестиций)." },
+  { title: "Прозрачная отчетность", desc: "Понятные панели и регулярные отчёты — вы всегда знаете, что происходит." },
+  { title: "Выделенная команда", desc: "Опытный стратег и творческая команда, закреплённая за вашим проектом." },
 ];
 
 const Index = () => {
@@ -57,7 +57,7 @@ const Index = () => {
       {/* Hero */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={heroBg} alt="" className="w-full h-full object-cover" />
+          <img src={heroBg} alt="Фоновое изображение" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-background/30" />
         </div>
         <div className="container mx-auto px-4 lg:px-8 relative z-10 py-32">
@@ -71,7 +71,7 @@ const Index = () => {
               Соцсети, которые <span className="text-gradient">дают рост</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-lg leading-relaxed">
-              We help businesses across industries build powerful social media presences that generate real, measurable results.
+            Мы помогаем бизнесам во многих отраслях строить мощное присутствие в социальных сетях, что даёт реальные и измеримые результаты.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -84,7 +84,7 @@ const Index = () => {
                 to="/cases"
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full border-2 border-foreground/20 text-foreground font-semibold hover:bg-secondary transition-all"
               >
-                View Cases
+                Посмотреть кейсы
               </Link>
             </div>
           </motion.div>
@@ -92,12 +92,12 @@ const Index = () => {
       </section>
 
       {/* Services Overview */}
-      <section className="py-24 bg-secondary/50">
+          <section className="py-24 bg-secondary/50">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div {...fadeUp} className="text-center mb-16">
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">What We Do</h2>
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Чем мы занимаемся</h2>
             <p className="text-muted-foreground max-w-lg mx-auto">
-              End-to-end social media marketing services designed to grow your business.
+              Полный спектр услуг SMM, разработанных для роста вашего бизнеса.
             </p>
           </motion.div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -126,11 +126,11 @@ const Index = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div {...fadeUp} className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
             <div>
-              <h2 className="font-display text-3xl md:text-4xl font-bold mb-2">Featured Cases</h2>
-              <p className="text-muted-foreground">Real results for real businesses.</p>
+              <h2 className="font-display text-3xl md:text-4xl font-bold mb-2">Избранные кейсы</h2>
+              <p className="text-muted-foreground">Реальные результаты для реальных бизнесов.</p>
             </div>
             <Link to="/cases" className="text-primary font-semibold flex items-center gap-1 hover:gap-2 transition-all text-sm">
-              View all cases <ArrowRight className="w-4 h-4" />
+              Посмотреть все кейсы <ArrowRight className="w-4 h-4" />
             </Link>
           </motion.div>
           <div className="flex flex-wrap gap-2 mb-8">
@@ -138,7 +138,7 @@ const Index = () => {
               onClick={() => setActiveCategory("all")}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${activeCategory === "all" ? "bg-primary text-primary-foreground" : "bg-secondary text-muted-foreground hover:text-foreground"}`}
             >
-              All
+              Все
             </button>
             {categories.map((c) => (
               <button
@@ -159,18 +159,18 @@ const Index = () => {
       </section>
 
       {/* Package Teaser */}
-      <section className="py-24 gradient-warm">
+          <section className="py-24 gradient-warm">
         <div className="container mx-auto px-4 lg:px-8 text-center">
           <motion.div {...fadeUp}>
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Build Your Perfect Package</h2>
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Создайте идеальный пакет</h2>
             <p className="text-muted-foreground max-w-lg mx-auto mb-8">
-              Use our interactive configurator to choose your industry, goals, tools, and support level — get an instant estimate.
+              Используйте наш интерактивный конфигуратор, чтобы выбрать отрасль, цели, инструменты и уровень поддержки — получите мгновенную оценку.
             </p>
             <Link
               to="/packages"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-primary text-primary-foreground font-semibold hover:opacity-90 transition-all"
             >
-              Try Package Builder <ArrowRight className="w-4 h-4" />
+              Попробовать конструктор пакета <ArrowRight className="w-4 h-4" />
             </Link>
           </motion.div>
         </div>
@@ -180,8 +180,8 @@ const Index = () => {
       <section className="py-24">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div {...fadeUp} className="text-center mb-16">
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Why MRKTO</h2>
-            <p className="text-muted-foreground max-w-lg mx-auto">What sets us apart from other agencies.</p>
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Почему MRKTO</h2>
+            <p className="text-muted-foreground max-w-lg mx-auto">Что отличает нас от других агентств.</p>
           </motion.div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {whyUs.map((item, i) => (
@@ -205,8 +205,8 @@ const Index = () => {
       <section className="py-24 bg-secondary/50">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div {...fadeUp} className="text-center mb-16">
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Meet the Founders</h2>
-            <p className="text-muted-foreground max-w-lg mx-auto">The people behind MRKTO's success.</p>
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Знакомьтесь с основателями</h2>
+            <p className="text-muted-foreground max-w-lg mx-auto">Люди, стоящие за успехом MRKTO.</p>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {founders.map((f, i) => (
@@ -225,7 +225,7 @@ const Index = () => {
       <section className="py-24">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div {...fadeUp} className="text-center mb-16">
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Client Отзывы</h2>
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Отзывы клиентов MRKTO</h2>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {testimonials.map((t, i) => (
@@ -277,10 +277,10 @@ const Index = () => {
       {/* Contact Form */}
       <section className="py-24">
         <div className="container mx-auto px-4 lg:px-8 max-w-2xl">
-          <motion.div {...fadeUp} className="text-center mb-12">
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Let's Talk</h2>
-            <p className="text-muted-foreground">Готовы расти? Drop us a message or reach out directly.</p>
-          </motion.div>
+            <motion.div {...fadeUp} className="text-center mb-12">
+              <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Давайте поговорим</h2>
+              <p className="text-muted-foreground">Готовы расти? Оставьте сообщение или свяжитесь с нами напрямую.</p>
+            </motion.div>
           <motion.form
             {...fadeUp}
             className="glass-card-elevated p-8 space-y-5"
@@ -303,7 +303,7 @@ const Index = () => {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium mb-1.5">Email</label>
+            <label className="block text-sm font-medium mb-1.5">Электронная почта</label>
               <input
                 type="email"
                 required
@@ -326,11 +326,11 @@ const Index = () => {
                 placeholder="Tell us about your project..."
               />
             </div>
-            <button
+              <button
               type="submit"
               className="w-full py-3.5 rounded-full bg-primary text-primary-foreground font-semibold hover:opacity-90 transition-all flex items-center justify-center gap-2"
             >
-              <Send className="w-4 h-4" /> Send Message
+              <Send className="w-4 h-4" /> Отправить сообщение
             </button>
           </motion.form>
           <div className="flex justify-center gap-4 mt-6">

@@ -55,13 +55,13 @@ const PackageBuilder = () => {
             </div>
           ))}
         </div>
-        <p className="text-sm text-muted-foreground mb-6">Step {step + 1} of 5 — {steps[step]}</p>
+        <p className="text-sm text-muted-foreground mb-6">Шаг {step + 1} из 5 — {steps[step]}</p>
 
         <AnimatePresence mode="wait">
           {/* Step 0: Ниша */}
           {step === 0 && (
             <motion.div key="s0" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="space-y-3">
-              <h2 className="font-display text-2xl font-semibold mb-6">Choose Your Ниша</h2>
+              <h2 className="font-display text-2xl font-semibold mb-6">Выберите нишу</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {industries.map((ind) => (
                   <button
@@ -80,7 +80,7 @@ const PackageBuilder = () => {
           {/* Step 1: Цели */}
           {step === 1 && (
             <motion.div key="s1" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="space-y-3">
-              <h2 className="font-display text-2xl font-semibold mb-6">Select Your Цели</h2>
+              <h2 className="font-display text-2xl font-semibold mb-6">Выберите ваши цели</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {goals.map((goal) => (
                   <button
@@ -102,7 +102,7 @@ const PackageBuilder = () => {
           {/* Step 2: Инструменты */}
           {step === 2 && (
             <motion.div key="s2" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }}>
-              <h2 className="font-display text-2xl font-semibold mb-6">Choose Your Инструменты & Services</h2>
+              <h2 className="font-display text-2xl font-semibold mb-6">Выберите инструменты и сервисы</h2>
               <div className="space-y-2">
                 {tools.map((tool) => (
                   <button
@@ -127,7 +127,7 @@ const PackageBuilder = () => {
           {/* Step 3: Поддержка */}
           {step === 3 && (
             <motion.div key="s3" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }}>
-              <h2 className="font-display text-2xl font-semibold mb-6">Choose Поддержка Level</h2>
+              <h2 className="font-display text-2xl font-semibold mb-6">Выберите уровень поддержки</h2>
               <div className="space-y-3">
                 {supportLevels.map((level) => (
                   <button
@@ -154,7 +154,7 @@ const PackageBuilder = () => {
           {/* Step 4: Итог */}
           {step === 4 && (
             <motion.div key="s4" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }}>
-              <h2 className="font-display text-2xl font-semibold mb-6">Your Package Итог</h2>
+              <h2 className="font-display text-2xl font-semibold mb-6">Итог вашего пакета</h2>
               <div className="glass-card-elevated p-8 space-y-6">
                 <div>
                   <h4 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">Ниша</h4>

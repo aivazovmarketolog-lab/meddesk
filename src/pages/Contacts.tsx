@@ -136,7 +136,7 @@ const Contacts = () => {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium mb-1.5">Email</label>
+                <label className="block text-sm font-medium mb-1.5">Электронная почта</label>
                 <input
                   type="email"
                   required
@@ -144,7 +144,7 @@ const Contacts = () => {
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl bg-background border border-border focus:ring-2 focus:ring-primary/30 focus:border-primary outline-none transition-all text-sm"
-                  placeholder="your@email.com"
+                  placeholder="example@domain.ru"
                 />
               </div>
             </div>
@@ -292,7 +292,7 @@ const Contacts = () => {
                 rel="noreferrer"
                 className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-secondary text-foreground text-sm font-medium hover:bg-secondary/80 transition-colors"
               >
-                <Send className="w-4 h-4" /> Telegram
+                <Send className="w-4 h-4" /> Телеграм
               </a>
             </div>
 
