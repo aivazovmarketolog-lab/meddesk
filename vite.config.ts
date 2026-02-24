@@ -6,7 +6,7 @@ import { componentTagger } from "lovable-tagger";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   // Чтобы сборка корректно работала на GitHub Pages (в подпапке репозитория)
-  base: "/meddesk/",
+  base: "./",
   server: {
     host: "::",
     port: 8080,
