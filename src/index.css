@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 100% 97%;
+    --foreground: 20 25% 12%;
+
+    --card: 39 85% 95%;
+    --card-foreground: 20 25% 12%;
+
+    --popover: 40 100% 97%;
+    --popover-foreground: 20 25% 12%;
+
+    --primary: 15 55% 48%;
+    --primary-foreground: 40 100% 97%;
+
+    --secondary: 34 78% 91%;
+    --secondary-foreground: 20 25% 12%;
+
+    --muted: 60 67% 91%;
+    --muted-foreground: 20 10% 45%;
+
+    --accent: 340 60% 96%;
+    --accent-foreground: 20 25% 12%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 30% 87%;
+    --input: 30 30% 87%;
+    --ring: 15 55% 48%;
+
+    --radius: 1rem;
+
+    --sidebar-background: 39 85% 95%;
+    --sidebar-foreground: 20 25% 12%;
+    --sidebar-primary: 15 55% 48%;
+    --sidebar-primary-foreground: 40 100% 97%;
+    --sidebar-accent: 34 78% 91%;
+    --sidebar-accent-foreground: 20 25% 12%;
+    --sidebar-border: 30 30% 87%;
+    --sidebar-ring: 15 55% 48%;
+
+    /* Custom tokens */
+    --warm-50: 40 100% 98%;
+    --warm-100: 39 85% 95%;
+    --warm-200: 34 78% 91%;
+    --warm-300: 30 67% 85%;
+    --warm-400: 6 100% 94%;
+    --warm-500: 340 60% 96%;
+
+    --terracotta: 15 55% 48%;
+    --terracotta-light: 15 55% 60%;
+    --terracotta-dark: 15 55% 38%;
+
+    --glass-bg: 39 85% 95% / 0.6;
+    --glass-border: 30 30% 87% / 0.5;
+
+    --shadow-soft: 0 4px 24px -4px hsl(20 25% 12% / 0.06);
+    --shadow-elevated: 0 12px 40px -8px hsl(20 25% 12% / 0.1);
+  }
+
+  .dark {
+    --background: 20 25% 8%;
+    --foreground: 40 100% 97%;
+    --card: 20 20% 12%;
+    --card-foreground: 40 100% 97%;
+    --popover: 20 20% 12%;
+    --popover-foreground: 40 100% 97%;
+    --primary: 15 55% 55%;
+    --primary-foreground: 20 25% 8%;
+    --secondary: 20 15% 18%;
+    --secondary-foreground: 40 100% 97%;
+    --muted: 20 15% 18%;
+    --muted-foreground: 30 15% 60%;
+    --accent: 20 15% 18%;
+    --accent-foreground: 40 100% 97%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 20 15% 20%;
+    --input: 20 15% 20%;
+    --ring: 15 55% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-card/60 backdrop-blur-md border border-border/50 rounded-2xl;
+    box-shadow: var(--shadow-soft);
+  }
+
+  .glass-card-elevated {
+    @apply bg-card/80 backdrop-blur-lg border border-border/50 rounded-2xl;
+    box-shadow: var(--shadow-elevated);
+  }
+
+  .gradient-warm {
+    background: linear-gradient(135deg, hsl(var(--warm-100)), hsl(var(--warm-200)), hsl(var(--warm-500)));
+  }
+
+  .gradient-hero {
+    background: linear-gradient(160deg, hsl(var(--warm-50)), hsl(var(--warm-100)) 40%, hsl(var(--warm-400)) 100%);
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--terracotta)), hsl(var(--terracotta-dark)));
+  }
+}
