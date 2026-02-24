@@ -44,8 +44,8 @@ export const caseStudies: CaseStudy[] = [
     title: "Увеличение прибыли из Instagram с 300 000 до 5 000 000 за 3 месяца",
     client: "Медицинский центр «Целитель»",
     category: "medical",
-    // Можно заменить на любую картинку в /public и указать здесь: url('/имя-файла') center/cover no-repeat
-    coverColor: "url('/case-tselitel.png') center/cover no-repeat",
+    // Можно заменить на любую картинку в /public и указать здесь: url('имя-файла') center/cover no-repeat
+    coverColor: "url('case-tselitel.png') center/cover no-repeat",
     goal: "Увеличение записей с Instagram на 200% в течение 6 месяцев",
     challenges: [
       "Слабое присутствие в социальных сетях на конкурентном рынке",
@@ -75,7 +75,7 @@ export const caseStudies: CaseStudy[] = [
     title: "Увеличение клиентской базы на 30% за 4 месяца",
     client: "Многопрофильный медицинский центр «Профимед»",
     category: "medical",
-    coverColor: "url('/case-profimed.png') center/cover no-repeat",
+    coverColor: "url('case-profimed.png') center/cover no-repeat",
     goal: "Привлечение живого трафика с Instagram в течение 6 месяцев",
     challenges: [
       "Слабое присутствие в социальных сетях на конкурентном рынке",
@@ -111,7 +111,7 @@ export const caseStudies: CaseStudy[] = [
     title: "Увеличение вовлеченности на 120% за 2 месяца",
     client: "Медицинский центр для детей и взрослых IMC",
     category: "medical",
-    coverColor: "url('/case-imc.png') center/cover no-repeat",
+    coverColor: "url('case-imc.png') center/cover no-repeat",
     goal:
       "Получение лояльной аудитории через экспертный контент и улучшение уровня съемки в роликах в течение 3х месяцев",
     challenges: [
@@ -148,7 +148,7 @@ export const caseStudies: CaseStudy[] = [
     title: "Увеличение вовлеченности на 300% за 2 месяца",
     client: "Книжный магазин Arbat media",
     category: "shopping",
-    coverColor: "url('/case-arbat-media.png') center/cover no-repeat",
+    coverColor: "url('case-arbat-media.png') center/cover no-repeat",
     goal: "Оживить контент, заполнить рубриками, увеличение охвата, редизайн страницы",
     challenges: [
       "Слабый визуал в социальных сетях на конкурентном рынке",
@@ -184,7 +184,7 @@ export const caseStudies: CaseStudy[] = [
     title: "Увеличение вовлеченности на 300% за 2 месяца",
     client: "Медицинский центр Dana Medical",
     category: "medical",
-    coverColor: "url('/case-dana-medical.png') center/cover no-repeat",
+    coverColor: "url('case-dana-medical.png') center/cover no-repeat",
     goal:
       "Оживить контент, заполнить рубриками, увеличить охват, сделать редизайн страницы и получить лояльную аудиторию через экспертный контент и улучшение уровня съемки в роликах в течение 3 месяцев",
     challenges: [
