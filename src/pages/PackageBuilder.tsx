@@ -45,7 +45,7 @@ const PackageBuilder = () => {
           <p className="text-muted-foreground text-lg mb-10">
             Configure your perfect social media marketing package in a few steps.
           </p>
-        </месtion.div>
+        </motion.div>
 
         {/* Progress */}
         <div className="flex items-center gap-1 mb-10">
@@ -74,7 +74,7 @@ const PackageBuilder = () => {
                   </button>
                 ))}
               </div>
-            </месtion.div>
+            </motion.div>
           )}
 
           {/* Step 1: Цели */}
@@ -96,7 +96,7 @@ const PackageBuilder = () => {
                   </button>
                 ))}
               </div>
-            </месtion.div>
+            </motion.div>
           )}
 
           {/* Step 2: Инструменты */}
@@ -121,7 +121,7 @@ const PackageBuilder = () => {
                   </button>
                 ))}
               </div>
-            </месtion.div>
+            </motion.div>
           )}
 
           {/* Step 3: Поддержка */}
@@ -148,7 +148,7 @@ const PackageBuilder = () => {
                   </button>
                 ))}
               </div>
-            </месtion.div>
+            </motion.div>
           )}
 
           {/* Step 4: Итог */}
@@ -205,7 +205,7 @@ const PackageBuilder = () => {
                   </a>
                 </div>
               </div>
-            </месtion.div>
+            </motion.div>
           )}
         </AnimatePresence>
 
