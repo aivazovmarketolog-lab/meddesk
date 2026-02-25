@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Page Not Found</title>
+    <script>
+      // Redirect any 404 under /meddesk/ to the SPA entry with hash routing
+      (function(){
+        var path = window.location.pathname || '/';
+        var base = '/meddesk';
+        // remove base from path
+        var rest = path.replace(/^\/meddesk/, '') || '/';
+        if (rest === '/' || rest === '') {
+          window.location.replace(base + '/#/' );
+        } else {
+          // ensure it becomes #/rest
+          if (rest.charAt(0) !== '/') rest = '/' + rest;
+          window.location.replace(base + '/#' + rest);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    Redirecting to the application…
+  </body>
+  </html>
